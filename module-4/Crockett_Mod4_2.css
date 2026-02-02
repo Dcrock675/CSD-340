@@ -1,54 +1,44 @@
-/* Container to center everything */
-#container {
-    width: 80%;
-    margin: 0 auto;
+/* Base font size */
+html, body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Page title */
+/* Center the main heading */
 h1 {
     text-align: center;
-    color: rgba(70, 130, 180, 1);
+    color: rgba(79, 54, 116, 0.9); /* optional color */
+}
+
+/* Center each book title */
+h3 {
+    text-align: center;
+    color: rgba(214, 168, 0, 0.9); /* optional color */
 }
 
 /* Image gallery grid */
 #image-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px; /* space between items */
     margin-top: 10%;
+    gap: 20px;
 }
 
-/* Gallery item title */
-.gallery-item h3 {
-    text-align: center;
-    color: rgba(34, 139, 34, 1);
-}
-
-/* Center figures and images */
+/* Center images inside figure */
 figure {
     text-align: center;
 }
 
-figure img {
-    width: 200px;  /* keeps images the same size */
-    height: auto;
-}
-
-/* Figure captions */
+/* Caption styling */
 figcaption {
     font-style: italic;
     font-size: 0.75em;
-    color: rgba(128, 0, 128, 1);
+    color: rgba(100, 100, 100, 0.9); /* optional color */
 }
 
-/* Return link styling */
-.return-link {
-    margin-top: 40px;
-    text-align: center;
-}
-
-.return-link a {
-    text-decoration: none;
-    color: rgba(34, 139, 34, 1);
-    font-weight: bold;
+/* Optional: make images scale nicely */
+img {
+    width: 80%;
+    height: auto;
+    border-radius: 4px;
 }
