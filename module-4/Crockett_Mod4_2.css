@@ -1,40 +1,54 @@
+/* Container to center everything */
 #container {
     width: 80%;
     margin: 0 auto;
 }
 
+/* Page title */
 h1 {
     text-align: center;
     color: rgba(70, 130, 180, 1);
 }
 
+/* Image gallery grid */
 #image-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* space between items */
     margin-top: 10%;
 }
 
+/* Gallery item title */
 .gallery-item h3 {
     text-align: center;
     color: rgba(34, 139, 34, 1);
 }
 
+/* Center figures and images */
 figure {
     text-align: center;
 }
 
 figure img {
-    width: 200px;
+    width: 200px;  /* keeps images the same size */
     height: auto;
 }
 
+/* Figure captions */
 figcaption {
     font-style: italic;
     font-size: 0.75em;
     color: rgba(128, 0, 128, 1);
 }
 
+/* Return link styling */
 .return-link {
     margin-top: 40px;
     text-align: center;
+}
+
+.return-link a {
+    text-decoration: none;
+    color: rgba(34, 139, 34, 1);
+    font-weight: bold;
 }
