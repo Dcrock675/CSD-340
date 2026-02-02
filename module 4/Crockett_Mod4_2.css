@@ -1,0 +1,40 @@
+#container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: rgba(70, 130, 180, 1);
+}
+
+#image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10%;
+}
+
+.gallery-item h3 {
+    text-align: center;
+    color: rgba(34, 139, 34, 1);
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    width: 200px;
+    height: auto;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+    color: rgba(128, 0, 128, 1);
+}
+
+.return-link {
+    margin-top: 40px;
+    text-align: center;
+}
